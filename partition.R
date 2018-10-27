@@ -20,3 +20,14 @@ table(df$gender)
 group3=sample(nrow(df),size=.7*nrow(df))
 group4=df[-group3,]
 nrow(group4)
+
+
+
+#using caret
+library(caret)
+table(df$gender)
+prop.table(table(df$gender))
+(index=createDataPartition(y=df$gender,p=0.7,list=F))
+  length(index)
+(train3=df[index3,])
+  
