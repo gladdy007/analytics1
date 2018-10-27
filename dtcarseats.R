@@ -10,12 +10,14 @@ library(rpart.plot)
 #Model
 tree1 = rpart(Sales ~ . , data=data, method='anova' )
 tree1
+
+
 rpart.plot(tree1, cex=.8)
 
 #this is large tree, so prune it: check cp
 printcp(tree1)
 #cp value should be chosen such that xerror is least
-prunetree = prune(tree1, cp=0.05)
+prunetree = prune(tree1, cp=0.014)
 #here we have selected a different value to simplify the tree
 
 prunetree

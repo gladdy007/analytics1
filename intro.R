@@ -32,5 +32,4 @@ x<- c(0:10,50)
 xm<-mean(x)
 xm
 c(xm, mean(x, trim=0.10))
-help(mean)
-getwd()
+source('test1.R')

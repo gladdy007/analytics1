@@ -18,3 +18,4 @@ chaidModel = chaid(vote3 ~ ., data = sample1, control=chaid_control(minbucket = 
 print(chaidModel)
 plot(chaidModel)
 ?chaid
+
